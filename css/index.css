@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ img {
 .main-page{
     width: 100%;
 }
+/* icons */
 .icon{
     width: 18px;
     height: 18px;
@@ -20,16 +22,53 @@ img {
     color: #ffff;
     cursor: pointer;
 }
+.main-icon, .search-btn{
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 24px;
+    opacity: 50%;
+    color: #ffff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.icon-btn{
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 24px;
+    height: 48px;
+    width: 48px;
+}
+.shopping-card{
+    position: relative;
+    opacity: 100%;
+}
+.nums{
+    position: absolute;
+    top: 8px;
+    right: 4px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-color: #ff5959;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 50%;
+}
 /* //////////////////////////////// header */
-header {
+.header {
     width: 100px;
     height: 100vh;
     background-color: #000000;
     position: fixed;
     z-index: 9999;
-    /* display: none; */
+    display: block;
 }
-/* /////////////// top */
+/* /////////////// header top */
 .header-layerTop{
     position: absolute;
     top: 0;
@@ -52,13 +91,13 @@ header {
 }
 .top-icon{
     margin: 0 auto;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     cursor: pointer;
 }
 .list-icon{
     margin-left: 16px;
 }
-/* /////////////// bottom */
+/* /////////////// header bottom */
 .header-layerBottom{
     position: absolute;
     top: 0;
@@ -96,7 +135,7 @@ header {
     margin-top: 96px;
     padding: 0 30px;
 }
-/* /////////////// list */
+/* /////////////// header list */
 .list{
     padding-bottom: 15px;
 }
@@ -105,9 +144,9 @@ header {
     margin-bottom: 0px;
     padding-left: 16px;
 }
-/* .list-drop-menu{
+.list-drop-menu{
     display: none;
-} */
+}
 .first-list{
     display: flex;
     align-items: center;
@@ -152,8 +191,6 @@ header {
     position: fixed;
     width: 100%;
     height: 100%;
-    background:url(/img/coffee-class_05.jpg) no-repeat;
-    background-size: cover;
 }
 /* //////////////////////////////// rightSide page */
 .right-side {
@@ -168,6 +205,55 @@ header {
 .right-side-content {
     width: 100%;
     height: 1080px;
+}
+.main-icon:hover{
+    opacity: 100%;
+}
+.right-side-header{
+    padding-top: 24px;
+    z-index: 10;
+}
+.main-icons{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* search */
+.search{
+    display: inline-block;
+    position:relative;
+    height: 48px;
+}
+.search-input{
+    background-color: #fff;
+    opacity: 0;
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 32px;
+    width: 32px;
+    border-radius: 4px;
+    /* 動畫 */
+    transition: all 0.3s ease;
+}
+.search-btn{
+    position:absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+/* ================================ 按鈕效果 */
+.btn:focus, input:focus{
+    outline: none;
+}
+.search{
+    color: white;
+}
+.search-active{
+    background-color: rgb(236, 236, 236);
+    width: 150px;
+    height: 36px;
+    transform: translateX(-150px);
 }
 /* //////////////////////////////// footer */
 .footer_container {
@@ -193,6 +279,94 @@ header {
     justify-content: center;
     align-items: center;
 }
+/* /////////////////////// hamburger effect */
+.menu-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+/* ////////////////////////// header-m */
+.header-m{
+    display: none;
+}
+/* ////////////////////////// footer-m */
+.footer-m {
+    display: none;
+}
+/* ////////////////////////// sign out */
+.signOut-menu{
+    position: absolute;
+    right: 50px;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.signOut-menu-container{
+    width: 100%;
+    padding: 0 8px;
+}
+.user{
+    padding: 8px;
+    border-bottom: solid 1px rgb(87, 87, 87);
+}
+.signOut{
+    border-top: solid 1px rgb(87, 87, 87);
+}
+.signOut-list{
+    padding: 8px;
+}
+.signOut-second-list{
+    padding:4px 0;
+}
+.signOut-list p{
+    color: #ffff;
+    margin: 0;
+}
+.signOut-list a{
+    width: 700px;
+    color: #ffff;
+    opacity: 50%;
+    text-decoration: none;
+}
+.signOut-list a:hover{
+    opacity: 100%;
+}
+.signOut-dropdown-active{
+    opacity: 1;
+    display: block;
+}
 /* //////////////////////////////// RWD */
 @media screen and (max-width:576px) {
     .left-side{
@@ -205,7 +379,18 @@ header {
     .right-side{
         width: 100%;
     }
-    header{
+     /* //////////// header */
+    .header{
         display: none;
+    }
+    .header-m{
+        display: block;
+    }
+    /* //////////// footer */
+    .footer {
+        display: none;
+    }
+    .footer-m {
+        display: block;
     }
 }
