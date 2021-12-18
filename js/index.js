@@ -1,5 +1,5 @@
 window.onload = function () {
-    // header menu
+    // ==================== header menu
     const navSlide = function () {
         const burger_btn = document.querySelector('.humburger');
         const menu = document.querySelector('.menu');
@@ -9,14 +9,23 @@ window.onload = function () {
         });
     }
     navSlide();
-
+    // ==================== header-m menu
+    const navSlide_m = function () {
+        const burger_m_btn = document.querySelector('.humburger-m');
+        const menu_m = document.querySelector('.menu-m');
+        // 點擊 humburger 彈出menu內容
+        burger_m_btn.addEventListener('click', function () {
+            menu_m.classList.toggle('menu-m-active');
+        });
+    }
+    navSlide_m();
     // ==================== search btn
-    const btn = document.querySelector('.search-btn');
-    const input = document.querySelector('.search-input');
+    const search_btn = document.querySelector('.search-btn');
+    const search_input = document.querySelector('.search-input');
 
-    btn.addEventListener('click', function () {
-        input.classList.toggle('search-active');
-        input.focus();
+    search_btn.addEventListener('click', function () {
+        search_input.classList.toggle('search-active');
+        search_input.focus();
         // 如果有active 文字就顯示，不然就消失
         if ($('.search-input').hasClass('search-active')) {
             $('.search-input').css('opacity', '1');
@@ -24,20 +33,33 @@ window.onload = function () {
             $('.search-input').css('opacity', '0');
         }
     });
-    // ==================== user btn
+    // ==================== header-m search btn
+    const search_btn_m = document.querySelector('.search-m-btn');
+    const search_input_m = document.querySelector('.search-m-input');
+
+    search_btn_m.addEventListener('click', function () {
+        search_input_m.classList.toggle('search-m-active');
+        search_input_m.focus();
+        if ($('.search-m-input').hasClass('search-m-active')) {
+            $('.search-m-input').css('opacity', '1');
+        } else {
+            $('.search-m-input').css('opacity', '0');
+        }
+    });
+    // ==================== header user btn
     const userBtn = document.querySelector(".user-btn");
     const signMenu = document.querySelector(".signOut-menu");
 
     userBtn.addEventListener('click', function () {
         signMenu.classList.toggle('signOut-dropdown-active');
-        // if ($('.search-input').hasClass('search-active')) {
-        //     $('.search-input').css('opacity', '1');
-        // } else {
-        //     $('.search-input').css('opacity', '0');
-        // }
     });
+    // ==================== header-m user btn
+    const userBtn_m = document.querySelector(".user-m-btn");
+    const signMenu_m = document.querySelector(".signOut-menu-m");
 
-
+    userBtn_m.addEventListener('click', function () {
+        signMenu_m.classList.toggle('signOut-m-dropdown-active');
+    });
 
 
 };
