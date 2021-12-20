@@ -60,6 +60,10 @@ window.onload = function () {
     userBtn_m.addEventListener('click', function () {
         signMenu_m.classList.toggle('signOut-m-dropdown-active');
     });
-
+    // ==================== drop
+    $('.list-drop .first-list').click(function () {
+        console.log($(this))
+        $(this).siblings().toggle();
+    })
 
 };
