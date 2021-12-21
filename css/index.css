@@ -199,12 +199,12 @@ img {
     right: 0;
     width: 50%;
     background-color: black;
-    height: 100%;
+    height: 100%; /*important*/
     padding: 0;
 }
 .right-side-content {
     width: 100%;
-    height: 100%;
+    height: inherit;
 }
 .main-icon:hover{
     opacity: 100%;
@@ -212,6 +212,8 @@ img {
 .right-side-header{
     padding-top: 24px;
     z-index: 10;
+    position: absolute;
+    right: 0;
 }
 .main-icons{
     padding: 0 50px;
@@ -297,6 +299,7 @@ img {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 6px;
     display: none;
+    z-index: 10;
 }
 .signOut-menu-container{
     width: 100%;
