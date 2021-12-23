@@ -15,18 +15,20 @@ p{
 :root{
     --main-color:#CC9A06;
     --hover-color:#ffc61c;
+    --font-main-color:#ffff;
+    --bg-dark-color:rgb(0, 0, 0)f;
 }
 img{
     width: 100%;
 }
-/* ///////////////////////// */
+/* ///////////////////////// hc-landing-page */
 .hc-landing-page{
     width: 100%;
     height: 100%;
 }
 .hc-first-page{
-    width: 100%;
-    height: 950px;
+    width: inherit;
+    height: 580px;
 }
 .right-side-header{
     position: absolute;
@@ -37,6 +39,13 @@ img{
     height: 130px;
     text-align: center;
     color: #ffff;
+}
+.hc-first-page-bottom-control{
+   width: 70%;
+   height: inherit;
+   line-height: 130px;
+   font-size: 1.25rem;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 /* ///////////////////////// main-page */
 
@@ -51,11 +60,20 @@ img{
 }
 /* ///////////////////// about  */
 .hc-main-about{
+    position: relative;
     width: 100%;
     margin-bottom: 60px;
+    overflow: hidden;
 }
 .hc-about-container{
+    background-position: 20% 0;
+  background-size: cover;
     padding: 0 50px;
+}
+.hc-about-bg{
+    background: url(../img/logo-bg.svg) no-repeat;
+    background-position: -50px top;
+    background-size: 400px 400px;
 }
 /* title */
 .hc-text{
@@ -164,11 +182,31 @@ img{
     width: 100%;
     height: inherit;
 }
+.hc-news-bg-01{
+    background: url(../img/news_001.jpg) no-repeat;
+}
+.hc-news-bg-02{
+    background: url(../img/news_002.jpg) no-repeat;
+}
+.hc-news-bg-03{
+    background: url(../img/news_003.jpg) no-repeat;
+}
+.hc-news-bg-04{
+    background: url(../img/news_004.jpg) no-repeat;
+}
+.hc-news-bg-05{
+    background: url(../img/news_005.jpg) no-repeat;
+}
+.hc-news-bg-06{
+    background: url(../img/news_006.jpg) no-repeat;
+}
 .hc-child-card{
     display: flex;
     justify-content: center;
     align-items: flex-end;
     padding: 8px;
+    background-position: center;
+    background-size: cover;
 }
 .hc-child-card a{
     color: #ffff;
@@ -205,6 +243,13 @@ img{
     width: 100%;
     height: 380px;
     margin: 0 4px;
+    transition: all 0.3s ease-out;
+    opacity: 0.8;
+}
+.hc-pds-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+    transform: scale(1.07);
+    opacity: 1;
 }
 .hc-card-content-container{
     padding: 8px;
@@ -225,4 +270,195 @@ img{
 }
 .hc-courses-container{
     padding: 0 50px;
+}
+/* carousel */
+.hc-carousel{
+    width: 100%;
+    margin-top: 60px;
+}
+/* slide */
+.slide-page{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*  //////////////////////////// indicator */
+.slide-indicators{
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 15%;
+    z-index: 15;
+}
+.slide-indicators li{
+    position: relative;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 3px;
+    background-color: rgba(255,255,255,.5);
+}
+.slide-indicators .active{
+    background-color: #ffff;
+}
+/* //////////////////////////// slide */
+.slides{
+      position: relative;
+      width: 100%;/*伸縮*/
+      height: 400px;
+}
+.slide-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* 定位 */
+    width: 100%;
+    padding: 0 100px;
+
+}
+.slide-img img{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*////////////////////////////// 調整位置 */
+.slide-img:nth-of-type(1){
+    left: 0;
+}
+.slide-img:nth-of-type(2){
+    left: 100%;
+}
+.slide-img:nth-of-type(3){
+    left: 200%;
+}
+/* //////////////////////////// button 前後按鍵 */
+.hc-btn-control{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 80%;
+    left: 200px;
+    height: 42px;
+    background-color: black;
+    /* z-index: 5; */
+}
+.slide-btn{
+    display: block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    margin: 0 16px;
+    transition: all 0.3s ease-in-out;
+}
+.slide-btn:hover{
+    opacity: 50%;
+}
+.slide-icon{
+    font-size: 12px;
+    color: #ffff;
+}
+.slide-control-next{
+    right: 0;
+}
+.slide-control-prev{
+    left: 0;
+}
+.btn-line{
+    width: 1px;
+    height: 20px;
+    background-color: var(--font-main-color);
+}
+/* //////////////////////////// 文字 */
+.slide-content{
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    top: 30%;
+    /* z-index: 5; */
+}
+.slide-content-card{
+    background-color: var(--main-color);
+    width: 300px;
+    padding: 24px 32px;
+}
+.slide-content-card h5{
+    color: var(--font-main-color);
+    letter-spacing: .25px;
+    font-weight: 700;
+    text-shadow:1px 1px 1px #000 ;
+}
+.slide-content-card p{
+    color: var(--font-main-color);
+    margin-top: 16px;
+    text-shadow:1px 1px 1px #000 ;
+}
+.slide-content-top-num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 24px;
+    color: var(--font-main-color);
+    margin: 0;
+    margin-bottom: 8px;
+}
+.slide-content-top-num .line-sp{
+    width: 15px;
+    height: 1px;
+    margin: 8px 0;
+    background-color: var(--font-main-color);
+}
+/* //////////////////////////////// RWD */
+@media screen and (max-width:1200px) {
+    .hc-box-title{
+        width: 40%;
+    }
+    .hc-pds-card{
+        height: 350px;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .slide-img{
+        padding: 0;
+    }
+}
+@media screen and (max-width:576px) {
+    body{
+        font-size: 0.875;
+    }
+    /* 左側消失 */
+    .left-side{
+        display: none;
+    }
+    .hc-box-title{
+        width: 40%;
+    }
+    /* product card */
+    .hc-pds-card-control{
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hc-pds-card-mid{
+        margin-top: 0;
+    }
+    .hc-pds-card{
+        height: 100%;
+        width: 300px;
+        margin-bottom: 16px;
+    }
+    /* course */
+    .slide-img{
+        padding: 0;
+    }
+    .hc-btn-control{
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

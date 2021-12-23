@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public Layout</title>
+    <title>landing_page</title>
     <!-- bootstrap@4.6 -->
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/1392152695.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./lib/awesome.all.min.css">
     <!-- css -->
     <link rel="stylesheet" href="./css/index.css">
     <!-- landing css-->
@@ -280,14 +280,16 @@
                                 style="background: url(./img/main_right.jpg) no-repeat; background-size: cover;">
                             </div>
                             <div class="hc-first-page-bottom d-flex justify-content-center align-items-center">
-                                <h4>実りある</h4>
+                                <div class="hc-first-page-bottom-control">
+                                    実りある
+                                </div>
                             </div>
                             <!-- main-page -->
                             <div class="hc-main-page">
                                 <div class="hc-main-container">
                                     <!-- about -->
                                     <div class="hc-main-about">
-                                        <div class="hc-about-container">
+                                        <div class="hc-about-container hc-about-bg">
                                             <!-- title -->
                                             <div class="hc-main-title-control d-flex flex-row-reverse">
                                                 <div class="hc-main-title d-flex">
@@ -360,12 +362,11 @@
                                                 <!-- card 01 -->
                                                 <div class="hc-card">
                                                     <div class="hc-card-control d-flex flex-column">
-                                                        <div class="hc-child-card1 hc-child-card hc-first-card"
-                                                            style="background: url(./img/beans_s_001.jpg) no-repeat;">
+                                                        <div
+                                                            class="hc-child-card1 hc-child-card hc-first-card hc-news-bg-01">
                                                             <a href="javascript:;"><span>咖啡專欄</span> </a>
                                                         </div>
-                                                        <div class="hc-child-card2 hc-child-card"
-                                                            style="background: url(./img/beans_s_002.jpg) no-repeat;">
+                                                        <div class="hc-child-card2 hc-child-card hc-news-bg-02">
                                                             <a href="javascript:;"><span>試飲包</span> </a>
                                                         </div>
                                                     </div>
@@ -373,12 +374,11 @@
                                                 <!-- card 02 -->
                                                 <div class="hc-card hc-mid-card">
                                                     <div class="hc-card-control d-flex flex-column">
-                                                        <div class="hc-child-card2 hc-child-card hc-first-card"
-                                                            style="background: url(./img/beans_s_001.jpg) no-repeat;">
+                                                        <div
+                                                            class="hc-child-card2 hc-child-card hc-first-card hc-news-bg-03">
                                                             <a href="javascript:;"><span>新品上市</span> </a>
                                                         </div>
-                                                        <div class="hc-child-card1 hc-child-card"
-                                                            style="background: url(./img/beans_s_002.jpg) no-repeat;">
+                                                        <div class="hc-child-card1 hc-child-card hc-news-bg-04">
                                                             <a href="javascript:;"><span>最新課程</span> </a>
                                                         </div>
                                                     </div>
@@ -386,12 +386,11 @@
                                                 <!-- card 03 -->
                                                 <div class="hc-card">
                                                     <div class="hc-card-control d-flex flex-column">
-                                                        <div class="hc-child-card1 hc-child-card hc-first-card"
-                                                            style="background: url(./img/beans_s_001.jpg) no-repeat;">
+                                                        <div
+                                                            class="hc-child-card1 hc-child-card hc-first-card hc-news-bg-05">
                                                             <a href="javascript:;"><span>優惠活動</span> </a>
                                                         </div>
-                                                        <div class="hc-child-card2 hc-child-card"
-                                                            style="background: url(./img/beans_s_002.jpg) no-repeat;">
+                                                        <div class="hc-child-card2 hc-child-card hc-news-bg-06">
                                                             <a href="javascript:;"><span>熱銷商品</span> </a>
                                                         </div>
                                                     </div>
@@ -566,7 +565,91 @@
                                             <div class="hc-box-title" style="background: url(./img/bg-gold.jpg);">
                                             </div>
                                             <!-- carousel -->
+                                            <div class="hc-carousel">
+                                                <div class="hc-carousel-container">
+                                                    <!-- ============================ slide-->
+                                                    <section class="slide-page" id="home">
+                                                        <!-- Indicator -->
+                                                        <ol class="slide-indicators">
+                                                            <!-- 動態生成 原點 -->
+                                                        </ol>
+                                                        <ul class="slides">
+                                                            <!-- slide_01 -->
+                                                            <li class="slide-img">
+                                                                <img src="./img/course_001.jpg" alt="">
+                                                                <div class="slide-content">
+                                                                    <div class="slide-container">
+                                                                        <div class="slide-content-top-num">
+                                                                            <span>01</span>
+                                                                            <div class="line-sp"></div>
+                                                                            <span>03</span>
+                                                                        </div>
+                                                                        <div class="slide-content-card">
+                                                                            <h5>個人課程</h5>
+                                                                            <p>拉花、咖啡入門、手沖入門，愛鑽研咖啡知識的您，歡迎來與我們交流。</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!-- slide_02 -->
+                                                            <li class="slide-img">
+                                                                <img src="./img/course_001.jpg" alt="">
+                                                                <div class="slide-content">
+                                                                    <div class="slide-container">
+                                                                        <div class="content-left">
+                                                                            <h1>Virtual reality</h1>
+                                                                            <h4>Online course to prepare you for a
+                                                                                career as a 3D modeler for film and
+                                                                                games</h4>
+                                                                        </div>
+                                                                        <div class="content-right">
+                                                                            <h5>VR Games</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!-- slide_03 -->
+                                                            <li class="slide-img">
+                                                                <img src="./img/course_001.jpg" alt="">
+                                                                <div class="slide-content">
+                                                                    <div class="slide-container">
+                                                                        <div class="content-left">
+                                                                            <h1>Virtual reality</h1>
+                                                                            <h4>Online course to prepare you for a
+                                                                                career as a 3D modeler for film and
+                                                                                games</h4>
+                                                                        </div>
+                                                                        <div class="content-right">
+                                                                            <h5>VR Games</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
 
+
+                                                        </ul>
+                                                        <!-- button -->
+                                                        <div class="hc-btn-control">
+                                                            <a class="slide-btn slide-control-prev"
+                                                                href="#slideIndicator" role="button" data-slide="prev">
+                                                                <span class="slide-icon slide-prev-icon"
+                                                                    aria-hidden="true">
+                                                                    <i class="fas fa-chevron-left"></i>
+                                                                </span>
+                                                            </a>
+                                                            <div class="btn-line"></div>
+                                                            <a class="slide-btn slide-control-next"
+                                                                href="#slideIndicator" role="button" data-slide="next">
+                                                                <span class="slide-icon slide-next-icon"
+                                                                    aria-hidden="true">
+                                                                    <i class="fas fa-chevron-right"></i>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </section>
+                                                    <!-- ============================ -->
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -685,12 +768,16 @@
     </div>
 
     <!--//////////////////////////////////////// script -->
+    <!-- fontawesome -->
+    <script src="./lib/awesome.all.min.js"></script>
     <!-- jQ -->
     <script src="./lib/jquery-3.6.0.min.js"></script>
-    <!-- bootstrap@4.6 -->
-    <script src="./lib/bootstrap.min.js"></script>
+    <!-- bootstrap bundle -->
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap map -->
     <!-- js -->
     <script src="./js/index.js"></script>
+    <script src="./js/landing_page.js"></script>
 
 </body>
 
