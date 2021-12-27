@@ -177,9 +177,21 @@ img{
 }
 /* //////////////////////////////// RWD */
 @media screen and (max-width:1200px) {
+    .hc-shopping-cart-container{
+        padding: 0 32px;
+    }
     .hc-table-lists tr td {
         padding: 8px 16px;
     }
+    /* 表單切換 */
+    .hc-show-xs{
+        display: block;
+        text-align: center;
+    }
+    .hc-hidden-xs{
+        display: none;
+    }
+
 }
 @media screen and (max-width:576px) {
    /* ////////////// table form */

@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shopping page</title>
+    <title>coffee accessories</title>
     <!-- fontawesome -->
     <link rel="stylesheet" href="./lib/awesome.all.min.css">
     <!-- bootstrap@4.6 -->
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <!-- css -->
     <link rel="stylesheet" href="./css/index.css">
-    <!-- shopping cart css -->
-    <link rel="stylesheet" href="./css/shopping_page.css">
+    <!-- coffee accessories css -->
+    <link rel="stylesheet" href="./css/coffeeAccessories_page.css">
 
 </head>
 
@@ -221,13 +221,45 @@
         <div class="row">
             <!-- leftSide page -->
             <div class="left-side">
+                <!-- ================================================= 新頁面加入 -->
                 <div class="left-side-bg"
-                    style="background: url(./img/coffee-class_05.jpg) no-repeat; background-size: cover;">
-                    <!-- ======================================================================================= add content -->
+                    style="background: url(./img/coffeeAccessories_bg.jpg) no-repeat; background-size: cover;">
+                    <!-- menu title -->
+                    <div class="hc-top-menus">
+                        <div class="hc-top-menu-container-push100">
+                            <div class="hc-top-menu-control">
+                                <!-- menu 1 -->
+                                <div class="hc-top-menu">
+                                    <a href="javascript:;">
+                                        豆單
+                                    </a>
+                                </div>
+                                <!-- menu 2 -->
+                                <div class="hc-top-menu">
+                                    <a href="javascript:;">
+                                        嚴選商品
+                                    </a>
+                                </div>
+                                <!-- menu 3 -->
+                                <div class="hc-top-menu">
+                                    <a href="javascript:;">
+                                        熱銷排行
+                                    </a>
+                                </div>
+                                <!-- menu 4 -->
+                                <div class="hc-top-menu">
+                                    <a class="hc-top-menu-active" href="javascript:;">
+                                        咖啡器材
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="container">
 
                     </div>
                 </div>
+                <!-- ================================================= -->
             </div>
             <!-- rightSide page -->
             <div class="right-side">
@@ -269,8 +301,12 @@
                         </div>
                     </div>
                     <!-- ================================================= 新頁面加入 -->
-                    <div class="hc-shopping-cart">
-                        <div class="hc-shopping-cart-container hc-shopping-bg">
+                    <div class="hc-coffee-products">
+                        <!-- box -->
+                        <div class="hc-box-title" style="background: url(./img/bg-gold.jpg);">
+                        </div>
+                        <!-- coffee products -->
+                        <div class="hc-coffee-products-container hc-shopping-bg">
                             <!-- page title -->
                             <div class="hc-page-title">
                                 <a href="javascript:;" class="hc-page-title-menu">
@@ -278,140 +314,239 @@
                                 </a>
                                 <span>/</span>
                                 <a href="javascript:;" class="hc-page-title-menu">
-                                    <span>購物車</span>
+                                    <span>咖啡器材</span>
                                 </a>
                             </div>
-                            <!-- process -->
-                            <div class="hc-process d-flex">
-                                <div class="hc-process-container d-flex justify-content-between hc-process-bg">
-                                    <div class="hc-process-list hc-process-active">購物車</div>
-                                    <div class="hc-process-list">填寫資料</div>
-                                    <div class="hc-process-list">訂單完成</div>
+                            <!-- coffee products -->
+                            <div class="hc-coffee-products-content">
+                                <div class="hc-coffee-products-content-container">
+                                    <div class="hc-main-title-control d-flex justify-content-between">
+                                        <!-- title -->
+                                        <div class="hc-main-title-en d-flex mb-4">DRIPPER</div>
+                                        <!-- filter -->
+                                        <div class="hc-main-filter-control">
+                                            <div class="hc-main-filter d-flex">
+                                                <h6>商品排序</h6>
+                                                <div class="icon list-icon hc-filter-icon"><i
+                                                        class="fas fa-chevron-down"></i></div>
+                                            </div>
+                                            <ul class="hc-drop-lists">
+                                                <li class="hc-drop-list">價格 高-低</li>
+                                                <li class="hc-drop-list">價格 低-高</li>
+                                                <li class="hc-drop-list">日期 新-舊</li>
+                                                <li class="hc-drop-list">日期 舊-新</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- products content -->
+                                    <div class="hc-products-grp">
+                                        <!-- product grp 1 -->
+                                        <div class="hc-products-grp-control">
+                                            <!-- product card 1 -->
+                                            <div class="hc-pds-card-control col-lg-4 col-md-6">
+                                                <div class="hc-pds-card">
+                                                    <div class="hc-pds-img">
+                                                        <a href="javascript:;">
+                                                            <img src="./img/product_coffeeMaker_001.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="hc-card-content-container">
+                                                        <div class="hc-card-content-title">
+                                                            <h5>日本Kalita手沖壺(SSW 1000)</h5>
+                                                        </div>
+                                                        <div class="hc-card-content-price">
+                                                            <span>NT$1,600</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- product card 2 -->
+                                            <div class="hc-pds-card-control col-lg-4 col-md-6">
+                                                <div class="hc-pds-card">
+                                                    <div class="hc-pds-img">
+                                                        <a href="javascript:;">
+                                                            <img src="./img/product_coffeeMaker_002.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="hc-card-content-container">
+                                                        <div class="hc-card-content-title">
+                                                            <h5>日本Kalita手沖壺(SSW 1000)</h5>
+                                                        </div>
+                                                        <div class="hc-card-content-price">
+                                                            <span>NT$2,000</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- product card 3 -->
+                                            <div class="hc-pds-card-control col-lg-4 col-md-6">
+                                                <div class="hc-pds-card">
+                                                    <div class="hc-pds-img">
+                                                        <a href="javascript:;">
+                                                            <img src="./img/product_coffeeMaker_003.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="hc-card-content-container">
+                                                        <div class="hc-card-content-title">
+                                                            <h5>日本Kalita手沖壺(SSW 500)</h5>
+                                                        </div>
+                                                        <div class="hc-card-content-price">
+                                                            <span>NT$1,800</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- product card 4 -->
+                                            <div class="hc-pds-card-control col-lg-4 col-md-6">
+                                                <div class="hc-pds-card">
+                                                    <div class="hc-pds-img">
+                                                        <a href="javascript:;">
+                                                            <img src="./img/product_coffeeCup_001.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="hc-card-content-container">
+                                                        <div class="hc-card-content-title">
+                                                            <h5>日本kalita濾杯</h5>
+                                                        </div>
+                                                        <div class="hc-card-content-price">
+                                                            <span>NT$800</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- product card 5 -->
+                                            <div class="hc-pds-card-control col-lg-4 col-md-6">
+                                                <div class="hc-pds-card">
+                                                    <div class="hc-pds-img">
+                                                        <a href="javascript:;">
+                                                            <img src="./img/product_coffeeCup_002.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="hc-card-content-container">
+                                                        <div class="hc-card-content-title">
+                                                            <h5>日本kalita濾杯</h5>
+                                                        </div>
+                                                        <div class="hc-card-content-price">
+                                                            <span>NT$900</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- product card 6 -->
+                                            <div class="hc-pds-card-control col-lg-4 col-md-6">
+                                                <div class="hc-pds-card">
+                                                    <div class="hc-pds-img">
+                                                        <a href="javascript:;">
+                                                            <img src="./img/product_coffeeCup_003.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="hc-card-content-container">
+                                                        <div class="hc-card-content-title">
+                                                            <h5>日本kalita濾杯</h5>
+                                                        </div>
+                                                        <div class="hc-card-content-price">
+                                                            <span>NT$850</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- product card 7 -->
+                                            <div class="hc-pds-card-control col-lg-4 col-md-6">
+                                                <div class="hc-pds-card">
+                                                    <div class="hc-pds-img">
+                                                        <a href="javascript:;">
+                                                            <img src="./img/product_filterPaper_001.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="hc-card-content-container">
+                                                        <div class="hc-card-content-title">
+                                                            <h5>日本katalita濾紙</h5>
+                                                        </div>
+                                                        <div class="hc-card-content-price">
+                                                            <span>NT$99~NT$150</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- product card 8 -->
+                                            <div class="hc-pds-card-control col-lg-4 col-md-6">
+                                                <div class="hc-pds-card">
+                                                    <div class="hc-pds-img">
+                                                        <a href="javascript:;">
+                                                            <img src="./img/product_filterPaper_002.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="hc-card-content-container">
+                                                        <div class="hc-card-content-title">
+                                                            <h5>日本katalita濾紙</h5>
+                                                        </div>
+                                                        <div class="hc-card-content-price">
+                                                            <span>NT$99~NT$150</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- product card 9 -->
+                                            <div class="hc-pds-card-control col-lg-4 col-md-6">
+                                                <div class="hc-pds-card">
+                                                    <div class="hc-pds-img">
+                                                        <a href="javascript:;">
+                                                            <img src="./img/product_filterPaper_003.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="hc-card-content-container">
+                                                        <div class="hc-card-content-title">
+                                                            <h5>日本katalita濾紙</h5>
+                                                        </div>
+                                                        <div class="hc-card-content-price">
+                                                            <span>NT$99~NT$150</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- table form -->
-                            <div class="hc-content-form">
-                                <!-- bought -->
-                                <table class="hc-table">
-                                    <thead>
-                                        <!-- 表單切換 -->
-                                        <tr class="hc-table-title">
-                                            <th>
-                                                <h5>項目</h5>
-                                            </th>
-                                            <th class="hc-hidden-xs">
-                                                <h5>重量</h5>
-                                            </th>
-                                            <th class="hc-hidden-xs">
-                                                <h5>磨豆</h5>
-                                            </th>
-                                            <th class="hc-hidden-xs">
-                                                <h5>數量</h5>
-                                            </th>
-                                            <th class="hc-hidden-xs">
-                                                <h5>價格</h5>
-                                            </th>
-                                            <th class="hc-show-xs">
-                                                <h5>細項</h5>
-                                            </th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="hc-table-lists" id="hc-lists">
-                                        <!-- 表單切換 -->
-                                        <tr>
-                                            <td>古典藍調 Classic Blue</td>
-                                            <td class="hc-hidden-xs">半磅</td>
-                                            <td class="hc-hidden-xs">原豆</td>
-                                            <td class="hc-hidden-xs">
-                                                <button><i class="fas fa-plus"></i></button><span>1</span><button><i
-                                                        class="fas fa-minus"></i></button>
-                                            </td>
-                                            <td class="hc-hidden-xs">NT$1100</td>
-                                            <td class="hc-show-xs">
-                                                <div class="hc-show-item">半磅</div>
-                                                <div class="hc-show-item">原豆</div>
-                                                <div class="hc-show-item">
-                                                    <button>
-                                                        <i class="fas fa-plus"></i></button><span>1</span><button><i
-                                                            class="fas fa-minus"></i>
-                                                    </button>
-                                                </div>
-                                                <div class="hc-show-item">NT$1100</div>
-                                            </td>
-                                            <td class="hc-td-trash"><a href="javascript:;" class="hc-trash"><i
-                                                        class="fas fa-trash-alt"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>古典藍調 Classic Blue</td>
-                                            <td class="hc-hidden-xs">半磅</td>
-                                            <td class="hc-hidden-xs">原豆</td>
-                                            <td class="hc-hidden-xs">
-                                                <button><i class="fas fa-plus"></i></button><span>1</span><button><i
-                                                        class="fas fa-minus"></i></button>
-                                            </td>
-                                            <td class="hc-hidden-xs">NT$1100</td>
-                                            <td class="hc-show-xs">
-                                                <div class="hc-show-item">半磅</div>
-                                                <div class="hc-show-item">原豆</div>
-                                                <div class="hc-show-item">
-                                                    <button>
-                                                        <i class="fas fa-plus"></i></button><span>1</span><button><i
-                                                            class="fas fa-minus"></i>
-                                                    </button>
-                                                </div>
-                                                <div class="hc-show-item">NT$1100</div>
-                                            </td>
-                                            <td class="hc-td-trash"><a href="javascript:;" class="hc-trash"><i
-                                                        class="fas fa-trash-alt"></i></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <!-- credit card  -->
-                                <table class="hc-table">
-                                    <thead>
-                                        <tr class="hc-table-title">
-                                            <th colspan="2">
-                                                <h5>訂單明細</h5>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="hc-table-lists hc-tbody-credit" id="hc-credit">
-                                        <tr>
-                                            <td>商品總計:</td>
-                                            <td>NT$1100</td>
-                                        </tr>
-                                        <tr>
-                                            <td>運送方式:</td>
-                                            <td>宅配</td>
-                                        </tr>
-                                        <tr>
-                                            <td>運費:</td>
-                                            <td>NT$120</td>
-                                        </tr>
-                                        <tr>
-                                            <td>折價卷代碼:</td>
-                                            <td><input type="text" class="hc-input-code" name="coupon_code">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>結帳金額:</td>
-                                            <td>
-                                                <div class="hc-total">NT$1120</div>
-                                                <div>消費滿1300元免運費</div>
-                                                <div>差100元可免運</div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- send button -->
-                            <div class="hc-shopping-btn">
-                                <a href="javascript:;" type="button" class="btn btn-outline-warning px-5">結帳</a>
-                            </div>
                         </div>
+                        <!-- page number -->
+                        <div class="hc-page-number">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <!-- 第1頁 -->
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:;">
+                                            <i class="fas fa-backward"></i>
+                                        </a>
+                                    </li>
+                                    <!-- 上一頁 -->
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:;">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </a>
+                                    </li>
+                                    <!-- 中間頁 -->
+                                    <li class="page-item">
+                                        <a class="page-link page-link-active" href="javascript:;">
+                                            1
+                                        </a>
+                                    </li>
+                                    <!-- 下一頁 -->
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:;">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                    <!-- 最後1頁 -->
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:;">
+                                            <i class="fas fa-forward"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
                     </div>
                     <!-- ================================================= -->
                 </div>
@@ -533,7 +668,8 @@
     <script src="./lib/bootstrap.bundle.min.js"></script>
     <!-- js -->
     <script src="./js/index.js"></script>
-
+    <!-- coffeeAccessories js -->
+    <script src="./js/coffeeAccessories_page.js"></script>
 </body>
 
 </html>
