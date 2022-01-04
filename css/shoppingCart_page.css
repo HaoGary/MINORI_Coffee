@@ -28,6 +28,9 @@ p{
 img{
     width: 100%;
 }
+.hc-num-red{
+    color: var(--warning-color);
+}
 /* ///////////////////////// hc-shopping-cart*/
 .hc-shopping-cart{
     width: 100%;
@@ -145,6 +148,7 @@ img{
     color: var(--font-main-color);
 }
 /* ///////////////// credit card */
+/* 信用卡 */
 .hc-tbody-credit tr>:last-child{
     text-align: end;
 }
@@ -164,16 +168,82 @@ img{
 .hc-input-code:focus{
     opacity: 100%;
 }
-.hc-total{
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--main-color);
-}
-/*  /////////////////////////////////// send button */
+/* /////////////////////////////////// send button */
 .hc-shopping-btn{
     display: flex;
     justify-content: flex-end;
     width: 100%;
+}
+/* ////////////// push form check box */
+.hc-control-table{
+    position: relative;
+}
+.hc-check-move{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.hc-check-move-first{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 120px;
+}
+/* invoice Information */
+.hc-table-size tr td>label{
+    font-size: 1rem;
+    margin: 0;
+    padding-right: 16px;
+}
+/* ///////////////////////////////////  訂單編號 */
+.hc-tbody-orderDone tr>:last-child{
+    text-align: end;
+}
+.hc-tbody-orderDone tr>:first-child{
+    color: rgba(255, 255, 255, 0.5);
+}
+.hc-tbody-orderDone>:last-child{
+    border-bottom: none;
+}
+.hc-order-content ul{
+    margin: 0;
+}
+.hc-order-content ul li>span{
+    padding: 0;
+}
+.hc-order-content{
+    padding-left: 20px;
+}
+.hc-order-content li:first-child{
+    margin-bottom: 8px;
+}
+.hc-order-content li:last-child>span:first-child{
+    float: left;
+}
+.hc-order-content li:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+.hc-total{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.hc-total div{
+    display:flex;
+    align-items: flex-end;
+}
+.hc-total h3{
+    font-weight: 700;
+    color: var(--main-color);
+    margin: 0;
+    border-bottom: 1px solid var(--main-color);
+}
+.hc-order-img{
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
 }
 /* //////////////////////////////// RWD */
 @media screen and (max-width:1200px) {
@@ -191,7 +261,6 @@ img{
     .hc-hidden-xs{
         display: none;
     }
-
 }
 @media screen and (max-width:576px) {
    /* ////////////// table form */
@@ -221,5 +290,19 @@ img{
     .hc-table-lists tr td {
         padding: 8px 16px;
     }
+    .hc-table-lists tr td span {
+        padding: 0 4px;
+    }
+   /* invoice Information */
+    .hc-check-move-first{
+        right: 0;
+        left: 0;
+        margin-left: 12px
+    }
+    /* ///////////////////////////////////  訂單編號 */
+    .hc-order-content{
+        padding-left: 8px;
+    }
+    
 
 }
