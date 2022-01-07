@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public Layout</title>
+    <title>order tracking page</title>
     <!-- fontawesome -->
     <link rel="stylesheet" href="./lib/awesome.all.min.css">
     <!-- bootstrap@4.6 -->
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <!-- css -->
     <link rel="stylesheet" href="./css/index.css">
+    <!-- card css -->
+    <link rel="stylesheet" href="./css/card.css">
+    <!-- shopping cart css -->
+    <!-- <link rel="stylesheet" href="./css/shoppingCart_page.css"> -->
+    <!-- order tracking css -->
+    <link rel="stylesheet" href="./css/order_tracking_page.css">
+
 </head>
 
 <body>
@@ -218,13 +225,48 @@
         <div class="row">
             <!-- leftSide page -->
             <div class="left-side">
-                <div class="left-side-bg"
-                    style="background: url(./img/coffee-class_05.jpg) no-repeat; background-size: cover;">
-                    <!-- ======================================================================================= add content -->
-                    <div class="container">
+                <!-- ================================================= 新頁面加入 -->
+                <div class="left-side-push100">
+                    <div class="hc-left-side-bg"
+                        style="background: url(./img/news_003.jpg) no-repeat; background-size: cover; background-position: center">
+                        <!-- ======================================================================================= add content -->
+                        <!-- head -->
+                        <div class="hc-top-menus">
+                            <div class="hc-top-menu-container-pushTop">
+                                <div class="hc-top-menu-control">
+                                    <!-- menu 1 -->
+                                    <div class="hc-top-menu">
+                                        <a href="javascript:;">
+                                            個人資料
+                                        </a>
+                                    </div>
+                                    <!-- menu 2 -->
+                                    <div class="hc-top-menu">
+                                        <a href="javascript:;" class="hc-top-menu-active">
+                                            訂單查詢
+                                        </a>
+                                    </div>
+                                    <!-- menu 3 -->
+                                    <div class="hc-top-menu">
+                                        <a href="coupons_page.html">
+                                            優惠卷
+                                        </a>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 左側頁面內容 -->
+                        <div class="hc-left-side-content">
+                            <div class="hc-left-side-container">
+                                <div class="hc-bean-menu">
+                                    <!-- menu list -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- ================================================= -->
             </div>
             <!-- rightSide page -->
             <div class="right-side">
@@ -266,6 +308,97 @@
                         </div>
                     </div>
                     <!-- ================================================= 新頁面加入 -->
+                    <div class="hc-shopping-cart">
+                        <div class="hc-shopping-cart-container hc-shopping-bg">
+                            <!-- page title -->
+                            <div class="hc-page-title">
+                                <a href="javascript:;" class="hc-page-title-menu">
+                                    <span>首頁</span>
+                                </a>
+                                <span>/</span>
+                                <a href="javascript:;" class="hc-page-title-menu">
+                                    <span>訂單查詢</span>
+                                </a>
+                            </div>
+                            <!-- table form -->
+                            <div class="hc-content-form">
+                                <!-- order list  -->
+                                <table class="hc-table">
+                                    <thead>
+                                        <tr class="hc-table-title">
+                                            <th>
+                                                <h5>訂單編號</h5>
+                                            </th>
+                                            <th class="hc-hidden-xs">
+                                                <h5>狀態</h5>
+                                            </th>
+                                            <th class="hc-hidden-xs">
+                                                <h5>時間</h5>
+                                            </th>
+                                            <th class="hc-hidden-xs">
+                                                <h5>總計</h5>
+                                            </th>
+                                            <th class="hc-hidden-xs">
+                                                <h5>評價</h5>
+                                            </th>
+                                            <th class="hc-show-xs">
+                                                <h5>細項</h5>
+                                            </th>
+                                            <th>
+                                                <!-- trash -->
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="hc-table-lists" id="hc-order-track">
+                                        <!-- order 1-->
+                                        <tr>
+                                            <td><a href="comment_page.html">T00128-445</a></td>
+                                            <!-- hide -->
+                                            <td class="hc-hidden-xs text-success">已送達</td>
+                                            <td class="hc-hidden-xs">110/12/11 15:20:11</td>
+                                            <td class="hc-hidden-xs">1100</td>
+                                            <td class="hc-hidden-xs">已評價</td>
+                                            <!-- /////////// -->
+                                            <td class="hc-show-xs">
+                                                <div class="hc-show-item text-success">已送達</div>
+                                                <div class="hc-show-item">110/12/11 15:20:11</div>
+                                                <div class="hc-show-item">1100</div>
+                                                <div class="hc-show-item">已評價</div>
+                                            </td>
+                                            <td class="hc-td-trash"><a href="javascript:;" class="hc-trash"><i
+                                                        class="fas fa-trash-alt"></i></a>
+                                            </td>
+                                        </tr>
+                                        <!-- order 2-->
+                                        <tr>
+                                            <td><a href="javascript:;">T00128-445</a></td>
+                                            <!-- hide -->
+                                            <td class="hc-hidden-xs text-success">已送達</td>
+                                            <td class="hc-hidden-xs">110/12/11 15:20:11</td>
+                                            <td class="hc-hidden-xs">1100</td>
+                                            <td class="hc-hidden-xs">已評價</td>
+                                            <!-- /////////// -->
+                                            <td class="hc-show-xs">
+                                                <div class="hc-show-item text-success">已送達</div>
+                                                <div class="hc-show-item">110/12/11 15:20:11</div>
+                                                <div class="hc-show-item">1100</div>
+                                                <div class="hc-show-item">已評價</div>
+                                            </td>
+                                            <td class="hc-td-trash"><a href="javascript:;" class="hc-trash"><i
+                                                        class="fas fa-trash-alt"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- send button -->
+                            <div class="hc-hc-shopping-btn-grp d-flex justify-content-center">
+                                <div class="hc-payment">
+                                    <a href="javascript:;" type="button" class="btn btn-outline-warning px-5">回首頁</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- ================================================= -->
                 </div>
                 <!-- footer -->
@@ -386,6 +519,8 @@
     <script src="./lib/bootstrap.bundle.min.js"></script>
     <!-- js -->
     <script src="./js/index.js"></script>
+    <!-- shopping cart js -->
+    <script src="./js/shoppingCart_page.js"></script>
 
 </body>
 

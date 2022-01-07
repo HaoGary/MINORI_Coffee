@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public Layout</title>
+    <title>coupons page</title>
     <!-- fontawesome -->
     <link rel="stylesheet" href="./lib/awesome.all.min.css">
     <!-- bootstrap@4.6 -->
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <!-- css -->
     <link rel="stylesheet" href="./css/index.css">
+    <!-- coupons css -->
+    <link rel="stylesheet" href="./css/coupons_page.css">
 </head>
 
 <body>
@@ -218,13 +220,48 @@
         <div class="row">
             <!-- leftSide page -->
             <div class="left-side">
-                <div class="left-side-bg"
-                    style="background: url(./img/coffee-class_05.jpg) no-repeat; background-size: cover;">
-                    <!-- ======================================================================================= add content -->
-                    <div class="container">
+                <!-- ================================================= 新頁面加入 -->
+                <div class="left-side-push100">
+                    <div class="hc-left-side-bg"
+                        style="background: url(./img/news_003.jpg) no-repeat; background-size: cover; background-position: center">
+                        <!-- ======================================================================================= add content -->
+                        <!-- head -->
+                        <div class="hc-top-menus">
+                            <div class="hc-top-menu-container-pushTop">
+                                <div class="hc-top-menu-control">
+                                    <!-- menu 1 -->
+                                    <div class="hc-top-menu">
+                                        <a href="javascript:;">
+                                            個人資料
+                                        </a>
+                                    </div>
+                                    <!-- menu 2 -->
+                                    <div class="hc-top-menu">
+                                        <a href="order_tracking_page.html">
+                                            訂單查詢
+                                        </a>
+                                    </div>
+                                    <!-- menu 3 -->
+                                    <div class="hc-top-menu">
+                                        <a class="hc-top-menu-active" href="coupons_page.html">
+                                            優惠卷
+                                        </a>
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 左側頁面內容 -->
+                        <div class="hc-left-side-content">
+                            <div class="hc-left-side-container">
+                                <div class="hc-bean-menu">
+                                    <!-- menu list -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- ================================================= -->
             </div>
             <!-- rightSide page -->
             <div class="right-side">
@@ -266,10 +303,72 @@
                         </div>
                     </div>
                     <!-- ================================================= 新頁面加入 -->
+                    <div class="hc-coupons-products">
+                        <!-- box -->
+                        <div class="hc-coupon-box-title" style="background: url(./img/bg-gold.jpg);">
+                        </div>
+                        <!-- coupons products -->
+                        <div class="hc-coupons-products-container hc-shopping-bg">
+                            <!-- page title -->
+                            <div class="hc-page-title">
+                                <a href="javascript:;" class="hc-page-title-menu">
+                                    <span>首頁</span>
+                                </a>
+                                <span>/</span>
+                                <a href="javascript:;" class="hc-page-title-menu">
+                                    <span>優惠卷</span>
+                                </a>
+                            </div>
+                            <!-- coupons products -->
+                            <div class="hc-coupons-products-content">
+                                <div class="hc-coupons-products-content-container">
+                                    <div class="hc-main-title-control d-flex justify-content-between">
+                                        <!-- title -->
+                                        <div class="hc-main-title-en d-flex mb-4">COUPONS</div>
+                                        <!-- filter -->
+                                    </div>
+                                    <!-- products content -->
+                                    <div class="hc-products-grp">
+                                        <!-- product grp 1 -->
+                                        <div class="hc-coupons d-flex align-items-center flex-column">
+                                            <!-- ticket card 動態生成 -->
+                                            <!-- <div class="hc-coupon-list">
+                                                <div class="hc-coupon-ticket">
+                                                    <div class="hc-coupon-ticket-bg">
+                                                        <h5 class="hc-ticket-title">折扣 NT$<span>100</span>
+                                                        </h5>
+                                                        <p>給所有商品使用</p>
+                                                    </div>
+                                                </div>
+                                                <div class="hc-coupon-content">
+                                                    <p>使用期限</p>
+                                                    <div>111年12月31日</div>
+                                                    <button class="hc-coupon-btn">領取</button>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <!-- show more -->
+                                    <div class="hc-showMore">
+                                        <button class="hc-showMore-btn">Show
+                                            More
+                                        </button>
+                                        <div class="hc-icon-down"><i class="fas fa-chevron-down"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- button -->
+                            <div class="hc-coupons-button">
+                                <a type="button" class="btn btn-outline-warning px-5" href="javascript:;">繼續購物</a>
+                            </div>
+                        </div>
+
+                        <!-- page number -->
+                    </div>
                     <!-- ================================================= -->
                 </div>
                 <!-- footer -->
-                <div class="footer" style="background: url(./img/footer_bg.jpg) no-repeat; background-size: cover;">
+                <div class="footer" style="background: url(./img/footer_bg.jpg) no-repeat;">
                     <div class="footer_container">
                         <div div class="col-lg-12 footer-content">
                             <div class="footer-logo" style="width:20%">
@@ -327,7 +426,8 @@
                     </div>
                 </div>
                 <!-- footer-m -->
-                <footer class="footer-m" style="background: url(./img/footer_bg.jpg) no-repeat;">
+                <footer class="footer-m"
+                    style="background: url(./img/footer_bg.jpg) no-repeat; background-size: cover;">
                     <div class="footer-m-content">
                         <div class="col-md-6 col-12 footer-img pt-5 pb-5">
                             <div class="img-container" style="width: 25%; margin: 0 auto;">
@@ -386,6 +486,8 @@
     <script src="./lib/bootstrap.bundle.min.js"></script>
     <!-- js -->
     <script src="./js/index.js"></script>
+    <!-- coupon js -->
+    <script src="./js/coupons_page.js"></script>
 
 </body>
 
