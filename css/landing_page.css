@@ -146,6 +146,7 @@ img{
     background-size: cover;
     margin-bottom: 16px;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 /* ///////////////////// news */
 .hc-news-cards{
@@ -201,12 +202,45 @@ img{
     background: url(../img/news_006.jpg) no-repeat;
 }
 .hc-child-card{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     padding: 8px;
     background-position: center;
     background-size: cover;
+    transition: all 0.3s ease-in-out;
+    border: solid 1px transparent;
+}
+.hc-child-card::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.8)) 0 102% no-repeat;
+    opacity: 0;
+    transition: opacity .25s ease;
+    mix-blend-mode: multiply;
+}
+.hc-child-card:hover::before{
+    opacity: 1;
+}
+.hc-child-card:hover{
+    border: solid 1px rgb(121, 121, 121);
+    color: var(--hover-color);
+}
+.hc-child-card span{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    bottom: 16px;
+    text-align:center;
 }
 .hc-child-card a{
     color: #ffff;
@@ -238,17 +272,21 @@ img{
     color: #ffff;
     text-align: center;
 }
+.hc-pds{
+    width: 100%;
+    padding: 0 4px;
+    margin-bottom: 80px;
+}
 .hc-pds-card{
     background-color: rgba(255, 255, 255, 0.1);
     width: 100%;
-    height: 380px;
-    margin: 0 4px;
+    height: 100%;
     transition: all 0.3s ease-out;
     opacity: 0.8;
 }
 .hc-pds-card:hover{
     box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
-    transform: scale(1.07);
+    transform: scale(1.02);
     opacity: 1;
 }
 .hc-card-content-container{
@@ -261,12 +299,13 @@ img{
     margin-bottom: 8px;
 }
 .hc-pds-card-mid{
-    margin-top: 60px;
+    transform: translateY(60px);
 }
 /* ///////////////////// course */
 .hc-main-courses{
     width: 100%;
     position: relative;
+    padding-bottom: 80px;
 }
 .hc-courses-container{
     padding: 0 50px;
@@ -306,86 +345,87 @@ img{
     background-color: #ffff;
 }
 /* //////////////////////////// slide */
-.slides{
-      position: relative;
-      width: 100%;/*伸縮*/
-      height: 400px;
-}
-.slide-img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute; /* 定位 */
-    width: 100%;
-    padding: 0 100px;
-
-}
-.slide-img img{
-    object-fit: cover;
-    display: block;
+.splide{
     width: 100%;
     height: 100%;
 }
-/*////////////////////////////// 調整位置 */
-.slide-img:nth-of-type(1){
-    left: 0;
+.hc-slide{
+      position: relative;
+      width: 100%;/*伸縮*/
+      height: 100%;
 }
-.slide-img:nth-of-type(2){
-    left: 100%;
+.hc-slide-control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 400px;
+    padding-left:100px;
+    padding-right:10px;
 }
-.slide-img:nth-of-type(3){
-    left: 200%;
+.hc-slide-img{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.hc-slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
 }
 /* //////////////////////////// button 前後按鍵 */
-.hc-btn-control{
+.splide__arrows{
     position: absolute;
     display: flex;
     align-items: center;
-    top: 80%;
+    top: 380px;
     left: 200px;
     height: 42px;
-    background-color: black;
-    /* z-index: 5; */
+    background-color: rgb(0, 0, 0);
+    width: 90px;
+    z-index: 20;
 }
-.slide-btn{
-    display: block;
-    width: 16px;
-    height: 16px;
-    line-height: 16px;
+.splide__arrow{
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
     text-align: center;
-    margin: 0 16px;
+    margin: 0 8px;
     transition: all 0.3s ease-in-out;
 }
-.slide-btn:hover{
-    opacity: 50%;
-}
-.slide-icon{
-    font-size: 12px;
-    color: #ffff;
-}
-.slide-control-next{
+.splide__arrow--next{
     right: 0;
 }
-.slide-control-prev{
+.splide__arrow--prev{
     left: 0;
 }
-.btn-line{
-    width: 1px;
-    height: 20px;
-    background-color: var(--font-main-color);
+.splide__pagination{
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 50px;
+    position: absolute;
+    z-index: 1;
 }
 /* //////////////////////////// 文字 */
-.slide-content{
+.hc-slide-content{
     width: 100%;
     text-align: left;
     position: absolute;
-    top: 30%;
+    bottom: 0;
+    left: 0;
     /* z-index: 5; */
 }
 .slide-content-card{
     background-color: var(--main-color);
     width: 300px;
     padding: 24px 32px;
+    transition: all 0.3s ease-in-out;
+    margin-left: 2px;
 }
 .slide-content-card h5{
     color: var(--font-main-color);
@@ -414,18 +454,64 @@ img{
     margin: 8px 0;
     background-color: var(--font-main-color);
 }
+.slide-content-card:hover{
+    opacity: 0.8;
+}
+/* //////////////////////////// pagetop */
+.hc-goTop {
+    position: fixed;
+    z-index: 30;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    bottom: 20px;
+    right: 36px;
+    background: #000;
+    font-size: 22px;
+    transition: all .5s ease-in-out;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+.hc-goTop:hover{
+    opacity: 60%;
+}
+.hc-goTop a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.hc-icon-top{
+    color: #ffff;
+}
 /* //////////////////////////////// RWD */
 @media screen and (max-width:1200px) {
     .hc-box-title{
         width: 40%;
     }
+    .hc-pds{
+        padding: 0;
+        margin: 0;
+    }
+    .hc-pds-card-mid{
+        transform: translateY(0px);
+    }
     .hc-pds-card{
         height: 350px;
         width: 100%;
+        margin-left:0 ;
+        margin-right:0 ;
         margin-bottom: 16px;
     }
     .slide-img{
         padding: 0;
+    }
+    /* pagetop */
+    .hc-goTop{
+        right: 16px;
     }
 }
 @media screen and (max-width:576px) {
@@ -439,11 +525,20 @@ img{
     .hc-box-title{
         width: 40%;
     }
+    /* /////////////////////////////// right page */
+    .hc-about-container, .hc-news-container, .hc-products-container, .hc-courses-container{
+        padding:0 32px;
+    }
     /* product card */
     .hc-pds-card-control{
-        padding: 0 20px;
+        padding: 0;
         flex-direction: column;
         align-items: center;
+    }
+    .hc-pds{
+        display: flex;
+        padding: 0;
+        justify-content: center;
     }
     .hc-pds-card-mid{
         margin-top: 0;
@@ -451,14 +546,30 @@ img{
     .hc-pds-card{
         height: 100%;
         width: 300px;
+        margin-left:0 ;
+        margin-right:0 ;
         margin-bottom: 16px;
     }
     /* course */
+    .hc-slide-control{
+        padding: 0;
+    }
+    .slide-content-card{
+        margin-left: 0;
+    }
+    .splide__arrows{
+        left: 0;
+        top: 380px;
+    }
     .slide-img{
         padding: 0;
     }
     .hc-btn-control{
         left: 50%;
         transform: translateX(-50%);
+    }
+    /* pagetop */
+    .hc-goTop{
+        right: 16px;
     }
 }
