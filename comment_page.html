@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./css/index.css">
     <!-- comment css -->
     <link rel="stylesheet" href="./css/comment_page.css">
+    <!-- star css -->
+    <link rel="stylesheet" href="./css/star_style.css">
 </head>
 
 <body>
@@ -350,7 +352,8 @@
                                                             <div class="d-flex">
                                                                 <h6>評價</h6>
                                                                 <div class="hc-star-icon">
-                                                                    <ul class="d-flex">
+                                                                    <!-- =================================== star -->
+                                                                    <!-- <ul class="d-flex">
                                                                         <li><i class="fas fa-star hc-star-active"></i>
                                                                         </li>
                                                                         <li><i class="fas fa-star hc-star-active"></i>
@@ -359,7 +362,43 @@
                                                                         </li>
                                                                         <li><i class="fas fa-star"></i></li>
                                                                         <li><i class="fas fa-star"></i></li>
-                                                                    </ul>
+                                                                    </ul> -->
+                                                                    <div class="star-widget d-flex">
+                                                                        <div class="star-grp">
+                                                                            <input class="input" type="radio"
+                                                                                name="rate" id="rate-5">
+                                                                            <label for="rate-5"
+                                                                                class="fas fa-star hc-star"></label>
+                                                                        </div>
+
+                                                                        <div class="star-grp">
+                                                                            <input class="input" type="radio"
+                                                                                name="rate" id="rate-4">
+                                                                            <label for="rate-4"
+                                                                                class="fas fa-star hc-star"></label>
+                                                                        </div>
+
+                                                                        <div class="star-grp">
+                                                                            <input class="input" type="radio"
+                                                                                name="rate" id="rate-3">
+                                                                            <label for="rate-3"
+                                                                                class="fas fa-star hc-star"></label>
+                                                                        </div>
+                                                                        <div class="star-grp">
+                                                                            <input class="input" type="radio"
+                                                                                name="rate" id="rate-2">
+                                                                            <label for="rate-2"
+                                                                                class="fas fa-star hc-star"></label>
+                                                                        </div>
+                                                                        <div class="star-grp">
+                                                                            <input class="input" type="radio"
+                                                                                name="rate" id="rate-1">
+                                                                            <label for="rate-1"
+                                                                                class="fas fa-star hc-star"></label>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <!-- =================================== -->
                                                                 </div>
                                                             </div>
                                                             <div>
@@ -416,7 +455,7 @@
                                         </div>
                                         <!-- button -->
                                         <div class="hc-coupons-button">
-                                            <a type="button" class="btn btn-outline-warning px-5"
+                                            <a type="button" class="btn btn-outline-warning px-5 send-btn"
                                                 href="javascript:;">送出</a>
                                         </div>
                                     </div>
@@ -634,8 +673,8 @@
     <script src="./lib/bootstrap.bundle.min.js"></script>
     <!-- js -->
     <script src="./js/index.js"></script>
-
-
+    <!-- star js -->
+    <script src="./js/star.js"></script>
 </body>
 
 </html>

@@ -122,7 +122,7 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
+    width: 50%;
     height: 200px;
     padding: 0;
 }
@@ -206,8 +206,10 @@ img{
     width: 100%;
 }
 .hc-products-push-pd{
-    padding-left:60px;
-    padding-right:60px;
+    width: 700px;
+    margin: 0 auto;
+    /* padding-left:60px; */
+    /* padding-right:60px; */
 }
 .hc-products-coffee-control{
     width: inherit;
