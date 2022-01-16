@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>beanList detail page</title>
+    <!-- splide 3.6.9 js -->
+    <link rel="stylesheet" href="./lib/splide.min.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="./lib/awesome.all.min.css">
     <!-- bootstrap@4.6 -->
@@ -25,7 +27,7 @@
                 <!-- icon top -->
                 <div class="header-top-icon">
                     <div class="logo-img top-icon" style="width: 50px;">
-                        <a href="javascript:;">
+                        <a href="landing_page.html">
                             <img src="./img/logo-m.png" alt="" style="width:100%;">
                         </a>
                     </div>
@@ -259,52 +261,10 @@
                         <!-- 左側頁面內容 -->
                         <div class="hc-left-side-content">
                             <div class="hc-left-side-container">
-                                <div class="hc-bean-menu">
-                                    <!-- menu list -->
-                                    <div class="list list-drop hc-bean-menu-drop">
-                                        <div class="first-list">
-                                            <a class="hc-bean-menu-list" href="javascript:;">以酸度分類</a>
-                                        </div>
-                                        <ul class="list-drop-menu" style="display: block;">
-                                            <li class="second-list">明亮酸</li>
-                                            <li class="second-list">酸</li>
-                                            <li class="second-list">柔和酸</li>
-                                            <li class="second-list">不酸</li>
-                                        </ul>
-
-                                    </div>
-                                    <div class="list list-drop hc-bean-menu-drop">
-                                        <div class="first-list">
-                                            <a class="hc-bean-menu-list" href="javascript:;">以洲別分類</a>
-                                        </div>
-                                        <ul class="list-drop-menu" style="display: block;">
-                                            <li class="second-list">中南美洲</li>
-                                            <li class="second-list">非洲</li>
-                                            <li class="second-list">亞洲</li>
-
-                                        </ul>
-                                    </div>
-                                    <div class="list list-drop hc-bean-menu-drop">
-                                        <div class="first-list">
-                                            <a class="hc-bean-menu-list" href="javascript:;">以處理法分類</a>
-                                        </div>
-                                        <ul class="list-drop-menu" style="display: block;">
-                                            <li class="second-list">日曬</li>
-                                            <li class="second-list">水洗</li>
-                                            <li class="second-list">蜜處理</li>
-                                            <li class="second-list">特殊</li>
-                                        </ul>
-                                    </div>
-                                    <div class="list list-drop hc-bean-menu-drop">
-                                        <div class="first-list">
-                                            <a class="hc-bean-menu-list" href="javascript:;">以烘培度分類</a>
-                                        </div>
-                                        <ul class="list-drop-menu" style="display: block;">
-                                            <li class="second-list">淺焙</li>
-                                            <li class="second-list">中淺焙</li>
-                                            <li class="second-list">中焙</li>
-                                            <li class="second-list">中深焙</li>
-                                        </ul>
+                                <div class="hc-detail-img">
+                                    <!-- menu product img -->
+                                    <div class="hc-product-img">
+                                        <img src="./img/beans_s_012.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -383,6 +343,22 @@
                                     <div class="hc-main-title-control d-flex justify-content-between">
                                         <!-- title -->
                                         <div class="hc-main-title-en d-flex mb-4">COFFEE</div>
+                                        <!-- back -->
+                                        <div class="hc-back">
+                                            <div class="hc-back-icon-control">
+                                                <a href="beanList_page.html">
+                                                    <div>
+                                                        <span class="hc-back-text">BACK to PRODUCTS</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="hc-back-line"></div>
+                                                        <div class="icon hc-back-icon">
+                                                            <i class="fas fa-chevron-right"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <!-- products content -->
                                     <div class="hc-products-detail-grp hc-products-push-pd">
@@ -474,13 +450,13 @@
                                                         </div>
                                                         <div class="hc-process-control">
                                                             <button class="hc-num-btn hc-plus"><i
-                                                                    class="fas fa-plus"></i></button>
+                                                                    class="fas fa-minus"></i></button>
                                                             <div class="hc-input-num">
                                                                 <input type="text" class="form-control text-center"
                                                                     id="inputNumber" placeholder="1">
                                                             </div>
                                                             <button class="hc-num-btn hc-minus"><i
-                                                                    class="fas fa-minus"></i></button>
+                                                                    class="fas fa-plus"></i></button>
                                                         </div>
                                                     </div>
 
@@ -510,63 +486,67 @@
                                     <h5>相關商品</h5>
                                 </div>
                                 <!-- products -->
-                                <div class="hc-products-grp">
-                                    <!-- product grp -->
-                                    <div class="hc-products-grp2-control">
-                                        <!-- product card 1 -->
-                                        <div class="hc-pds-card-control col-lg-4 col-md-6">
-                                            <div class="hc-pds-card">
-                                                <div class="hc-pds-img">
-                                                    <a href="javascript:;">
-                                                        <img src="./img/product_bean_001.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="hc-card-content-container">
-                                                    <div class="hc-card-content-title">
-                                                        <h5>耶加雪菲 晨之莓</h5>
-                                                    </div>
-                                                    <div class="hc-card-content-price">
-                                                        <span>NT$199 ~ NT$1,599</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- product card 2 -->
-                                        <div class="hc-pds-card-control col-lg-4 col-md-6">
-                                            <div class="hc-pds-card">
-                                                <div class="hc-pds-img">
-                                                    <a href="javascript:;">
-                                                        <img src="./img/product_bean_002.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="hc-card-content-container">
-                                                    <div class="hc-card-content-title">
-                                                        <h5>耶加雪菲 晨之莓</h5>
-                                                    </div>
-                                                    <div class="hc-card-content-price">
-                                                        <span>NT$199 ~ NT$1,599</span>
+                                <div class="splide hc-relate-splide">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <div class="hc-pds-card-control">
+                                                    <div class="hc-pds-card">
+                                                        <div class="hc-pds-img">
+                                                            <a href="beanList_detail_page.html">
+                                                                <img src="./img/product_bean_001.jpg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="hc-card-content-container">
+                                                            <div class="hc-card-content-title">
+                                                                <h5>耶加雪菲 晨之莓</h5>
+                                                            </div>
+                                                            <div class="hc-card-content-price">
+                                                                <span>NT$199 ~ NT$1,599</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <!-- product card 3 -->
-                                        <div class="hc-pds-card-control col-lg-4 col-md-6">
-                                            <div class="hc-pds-card">
-                                                <div class="hc-pds-img">
-                                                    <a href="javascript:;">
-                                                        <img src="./img/product_bean_003.jpg" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="hc-card-content-container">
-                                                    <div class="hc-card-content-title">
-                                                        <h5>耶加雪菲 晨之莓</h5>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="hc-pds-card-control">
+                                                    <div class="hc-pds-card">
+                                                        <div class="hc-pds-img">
+                                                            <a href="beanList_detail_page.html">
+                                                                <img src="./img/product_bean_002.jpg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="hc-card-content-container">
+                                                            <div class="hc-card-content-title">
+                                                                <h5>耶加雪菲 晨之莓</h5>
+                                                            </div>
+                                                            <div class="hc-card-content-price">
+                                                                <span>NT$199 ~ NT$1,599</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="hc-card-content-price">
-                                                        <span>NT$199 ~ NT$1,599</span>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="hc-pds-card-control">
+                                                    <div class="hc-pds-card">
+                                                        <div class="hc-pds-img">
+                                                            <a href="beanList_detail_page.html">
+                                                                <img src="./img/product_bean_003.jpg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="hc-card-content-container">
+                                                            <div class="hc-card-content-title">
+                                                                <h5>耶加雪菲 晨之莓</h5>
+                                                            </div>
+                                                            <div class="hc-card-content-price">
+                                                                <span>NT$199 ~ NT$1,599</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -684,6 +664,8 @@
     </div>
 
     <!--//////////////////////////////////////// script -->
+    <!-- splide 3.6.9 js -->
+    <script src="./lib/splide.min.js"></script>
     <!-- fontawesome -->
     <script src="./lib/awesome.all.min.js"></script>
     <!-- jQ -->
@@ -692,6 +674,7 @@
     <script src="./lib/bootstrap.bundle.min.js"></script>
     <!-- js -->
     <script src="./js/index.js"></script>
+    <script src="./js/beanList_detail_page.js"></script>
 
 </body>
 

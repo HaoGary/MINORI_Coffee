@@ -6,6 +6,7 @@
     text-decoration: none;
 }
 body{
+    background-color: black;
     font-size: 1rem;
     line-height: 1.31;
 }
@@ -21,14 +22,19 @@ p{
 img{
     width: 100%;
 }
-/* ///////////////////////// hc-landing-page */
+/* ///////////////////////// left page */
+
+/* ///////////////////////// right page */
 .hc-landing-page{
     width: 100%;
     height: 100%;
 }
 .hc-first-page{
-    width: inherit;
-    height: 600px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 720px;
 }
 .right-side-header{
     position: absolute;
@@ -66,13 +72,15 @@ img{
     overflow: hidden;
 }
 .hc-about-container{
+    max-width: 960px;
+    margin: 0 auto;
     background-position: 20% 0;
-  background-size: cover;
+    background-size: cover;
     padding: 0 50px;
 }
 .hc-about-bg{
     background: url(../img/logo-bg.svg) no-repeat;
-    background-position: -50px top;
+    background-position: -28px top;
     background-size: 400px 400px;
 }
 /* title */
@@ -120,6 +128,11 @@ img{
     line-height: 1.125;
 }
 /* main content */
+.hc-about-content{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
 .hc-about-content-control{
     width: 500px;
 }
@@ -157,6 +170,8 @@ img{
     position: relative;
 }
 .hc-news-container{
+    max-width: 960px;
+    margin: 0 auto;
     padding: 0 50px;
 }
 .hc-box-title-ldp{
@@ -264,6 +279,8 @@ img{
     margin-bottom: 60px;
 }
 .hc-products-container{
+    max-width: 960px;
+    margin: 0 auto;
     padding: 0 50px;
 }
 /* product card */
@@ -308,6 +325,8 @@ img{
     padding-bottom: 80px;
 }
 .hc-courses-container{
+    max-width: 960px;
+    margin: 0 auto;
     padding: 0 50px;
 }
 /* carousel */
@@ -526,6 +545,10 @@ img{
         width: 40%;
     }
     /* /////////////////////////////// right page */
+    .hc-first-page{
+        width: 100%;
+        height: 600px;
+    }
     .hc-about-container, .hc-news-container, .hc-products-container, .hc-courses-container{
         padding:0 32px;
     }

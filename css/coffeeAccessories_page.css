@@ -64,6 +64,13 @@ img{
     margin: 0 auto;
     margin-top: 8px;
 }
+/* 20220116 */
+.hc-top-menu-control a{
+    transition: all 0.3s ease-in-out;
+}
+.hc-top-menu-control a:hover{
+    color: var(--main-color);
+}
 /* ///////////////////////// rightSide page*/
 /* ///////////////////////// hc-coffee-products*/
 .hc-coffee-products{
@@ -207,15 +214,16 @@ img{
     background-color: transparent;
     border: 1px solid var(--main-color);
     color: var(--main-color);
+    transition: all 0.3s ease-in-out;
 }
 .page-link:hover{
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
-    color: black;
+    color: var(--font-main-color);
 }
 .page-link-active{
     background-color: var(--main-color);
-    color: black;
+    color: var(--font-main-color);
 }
 /* //////////////////////////////// RWD */
 @media screen and (max-width:576px) {

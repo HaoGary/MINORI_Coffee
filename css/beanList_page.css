@@ -64,6 +64,13 @@ img{
     margin: 0 auto;
     margin-top: 8px;
 }
+/* 20220116 */
+.hc-top-menu-control a{
+    transition: all 0.3s ease-in-out;
+}
+.hc-top-menu-control a:hover{
+    color: var(--main-color);
+}
 /* ///////////////////////// 左側頁面內容 */
 .left-side{
     position: relative;
@@ -117,25 +124,40 @@ img{
     margin: 0 auto;
     padding: 0;
 }
+/* 20220115 */
 .hc-bean-menu-drop{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
-    height: 200px;
+    height: 250px;
     padding: 0;
 }
 .hc-bean-menu-control{
     width: 100px;
 }
+/* 20220115 */
 .first-list .hc-bean-menu-list{
     color: var(--main-color);
     font-weight: 700;
     text-decoration: none;
     opacity: 100%;
+    font-size: 24px;
+    margin-bottom: 1rem;
 }
 .second-list{
     cursor: pointer;
+}
+.bean-list{
+    cursor: pointer;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    opacity: 50%;
+    transition: all 0.2s ease-in-out;
+}
+.bean-list:hover{
+    opacity: 100%;
 }
 .list-drop-menu{
     padding: 0;
@@ -233,9 +255,12 @@ img{
     opacity: 100%;
 }
 /* ///////////////////// products content */
+/* 20220115 */
 .hc-products-grp{
     padding-top: 60px;
     width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
 }
 .hc-products-grp-control{
     width: inherit;
@@ -251,7 +276,7 @@ img{
 }
 .hc-pds-card-control{
     width: 100%;
-    padding: 0 4px;
+    padding: 0 8px;
     margin-bottom: 48px;
 }
 .hc-pds-card{
@@ -283,15 +308,16 @@ img{
     background-color: transparent;
     border: 1px solid var(--main-color);
     color: var(--main-color);
+    transition: all 0.3s ease-in-out;
 }
 .page-link:hover{
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
-    color: black;
+    color: #fff;
 }
 .page-link-active{
     background-color: var(--main-color);
-    color: black;
+    color: #fff;
 }
 
 /* //////////////////////////////// RWD */
