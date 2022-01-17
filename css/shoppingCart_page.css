@@ -55,6 +55,8 @@ img{
 /* /////////////////////////////////// process */
 .hc-process{
     width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
     padding: 24px 0;
     position: relative;
 }
@@ -90,6 +92,8 @@ img{
     padding-top: 30px;
     padding-bottom: 60px;
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .hc-table{
     width: 100%;
@@ -183,11 +187,50 @@ img{
 .hc-input-code:focus{
     opacity: 100%;
 }
-/* /////////////////////////////////// send button */
-.hc-shopping-btn{
-    display: flex;
-    justify-content: flex-end;
+/* button */
+.hc-shopping-btn>a{
+    text-decoration: none;
+    color: #ffff;
+}
+.public-btn{
+    background-color: transparent;
+    position: relative;
+    color: #ffff;
+    padding: 16px 32px;
+    border: 1px solid var(--hover-color);
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    z-index:10;
+    overflow: hidden;
+}
+.public-btn::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: width 150ms ease-in-out;
+    border-radius: 4px;
+}
+.public-btn:hover::after{
     width: 100%;
+    height: 100%;
+}
+.public-btn:active{
+    color: #ffff;
+    background-color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+}
+.hc-shopping-btn-grp{
+    margin: 0 auto;
+    max-width: 800px;
 }
 /* ////////////// push form check box */
 .hc-control-table{
@@ -259,6 +302,15 @@ img{
     width: 48px;
     height: 48px;
     overflow: hidden;
+}
+/* alert button*/
+.btn-danger{
+    padding: 8px 24px;
+    margin: 0 16px;
+}
+.btn-success{
+    padding: 8px 24px;
+    margin: 0 16px;
 }
 /* //////////////////////////////// RWD */
 @media screen and (max-width:1200px) {

@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shopping fillIn page</title>
+    <!-- sweetalert2 js -->
+    <script src="./lib/sweetalert2.min.js"></script>
+    <!-- sweetalert2 css -->
+    <link rel="stylesheet" href="./lib/sweetalert2.min.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="./lib/awesome.all.min.css">
     <!-- bootstrap@4.6 -->
@@ -490,12 +494,12 @@
                                 </table>
                             </div>
                             <!-- send button -->
-                            <div class="hc-hc-shopping-btn-grp d-flex justify-content-between">
-                                <div class="hc-payment">
-                                    <a href="javascript:;" type="button" class="btn btn-outline-warning px-5">回購物車</a>
+                            <div class="hc-shopping-btn-grp d-flex justify-content-between">
+                                <div class="hc-shopping-btn hc-payment d-flex justify-content-center">
+                                    <a href="shoppingCart_page.html" type="button" class="public-btn">上一步</a>
                                 </div>
-                                <div class="hc-payment">
-                                    <a href="javascript:;" type="button" class="btn btn-outline-warning px-5">確認結帳</a>
+                                <div class="hc-shopping-btn hc-payment d-flex justify-content-center">
+                                    <a href="javascript:;" type="button" class="public-btn confirm-btn">確認結帳</a>
                                 </div>
                             </div>
 
@@ -613,6 +617,8 @@
     </div>
 
     <!--//////////////////////////////////////// script -->
+    <!-- sweetalert2 js -->
+    <script src="./lib/sweetalert2.all.min.js"></script>
     <!-- fontawesome -->
     <script src="./lib/awesome.all.min.js"></script>
     <!-- jQ -->
